@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.option {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 40px 80px;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option.checked {
+    background-color: #00e1ff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.validation-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 30px 60px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button-oui {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-non {
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-oui:hover {
+    background-color: #45a049;
+}
+
+.button-non:hover {
+    background-color: #e53935;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 150%;
+}
+
+#errorDisplay {
+    font-size: 33px;
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+    color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px 60px;
+    margin: 5px;
+    background-color: black;
+}
